@@ -6,7 +6,7 @@ These do the parsing.
 # TODO: Make sure all symbol refs are local--not class lookups or
 # anything--for speed. And kill all the dots.
 
-from inspect import getargspec
+from inspect import getfullargspec as getargspec
 import re
 
 from six import integer_types, python_2_unicode_compatible
